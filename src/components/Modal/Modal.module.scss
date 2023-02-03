@@ -1,0 +1,20 @@
+@import "src/style/variables.module";
+
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.2);
+}
+.content{
+    z-index: 2;
+    padding: 2rem;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: $radius;
+    box-shadow: 0 0 3rem rgba(1, 1, 1, 0.2);
+}

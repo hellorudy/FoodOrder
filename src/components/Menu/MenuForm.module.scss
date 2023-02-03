@@ -1,0 +1,38 @@
+@import "src/style/variables.module";
+
+.addCart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .3rem;
+    .inputWrapper{
+        display: flex;
+        input{
+            max-width: 1.5rem;
+            aspect-ratio: 1/1;
+            text-align: center;
+            border-radius: 0;
+            border-top: 1px solid $secondary;
+            border-bottom: 1px solid $secondary;
+            border-left: none;
+            border-right: none;
+            &::-webkit-inner-spin-button{
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
+        button{
+            background: transparent;
+            border: 1px solid $secondary;
+            cursor: pointer;
+            &.increment{
+                border-bottom-right-radius: $radius;
+                border-top-right-radius: $radius;
+            }
+            &.decrement{
+                border-bottom-left-radius: $radius;
+                border-top-left-radius: $radius;
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+@import "src/style/variables.module";
+
+.dark {
+    background-color: $dark;
+    color: $text-light;
+    border: none;
+    &:hover{
+        background-color: $dark-hover;
+    }
+}
+
+.primary {
+    background-color: $primary;
+    color: $text-light;
+    border: none;
+    &:hover{
+        background-color: $primary-hover;
+    }
+}
+.secondary{
+    background-color: $secondary;
+    color: $text-light;
+    border: none;
+    &:hover{
+        background-color: $secondary-hover;
+    }
+}
+.accent{
+    background-color: $accent;
+    color: $text-light;
+    border: none;
+    &:hover{
+        background-color: $accent-hover;
+    }
+}
+.light{
+    background-color: $light;
+    color: $text-dark;
+    border: none;
+    &:hover{
+        background-color: $light-hover;
+    }
+}
+.success{
+    background-color: $success;
+    color: $text-light;
+    border: none;
+    &:hover{
+        background-color: $success-hover;
+    }
+}
+.warning{
+    background-color: $warning;
+    color: $text-light;
+    border: none;
+    &:hover{
+        background-color: $warning-hover;
+    }
+}
+.danger{
+    background-color: $danger;
+    color: $text-light;
+    border: none;
+    &:hover{
+        background-color: $danger-hover;
+    }
+}
+.info{
+    background-color: $info;
+    color: $text-dark;
+    border: none;
+    &:hover{
+        background-color: $info-hover;
+    }
+}
+.dangerBorder{
+    border: 1px solid $danger;
+    color: $danger;
+    background: transparent;
+    &:hover{
+        background: $danger;
+        color: $text-light;
+    }
+}
+
+.button{
+    border-radius: $radius;
+    padding: 10px 20px;
+    gap: 10px;
+    display: inline-flex;
+    font-size: $fs-regular;
+    align-items: center;
+    transition: .2s all;
+    cursor: pointer;
+}

@@ -1,0 +1,33 @@
+@import "src/style/_variables.module.scss";
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $secondary;
+    padding: 1rem;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: .4rem;
+
+        .name {
+            color: $dark;
+            font-size: $fs-subtitle;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .dsc {
+            font-size: $fs-regular;
+            font-style: italic;
+        }
+
+        .price {
+            font-size: $fs-title;
+            color: $accent;
+            font-weight: 700;
+        }
+    }
+}

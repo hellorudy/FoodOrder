@@ -1,0 +1,14 @@
+@import "src/style/variables.module";
+
+.header{
+    background-color: $primary;
+    width: calc(100vw - 12rem);
+    padding: .2rem 6rem;
+    font-size: $fs-title;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .title{
+        color: $text-light;
+    }
+}

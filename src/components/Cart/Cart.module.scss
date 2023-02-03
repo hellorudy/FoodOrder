@@ -1,0 +1,98 @@
+@import "src/style/variables.module";
+
+.amountWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    margin: 1rem 0;
+    .totalName{
+        font-size: $fs-title;
+        font-weight: 400;
+    }
+    .totalPrice{
+        font-size: $fs-title;
+        color: $secondary;
+        font-weight: 600;
+    }
+}
+.orderList{
+    padding-left: 0;
+    list-style: none;
+    .item {
+        border-bottom: 1px solid $secondary;
+        padding: .8rem;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        justify-content: space-between;
+
+        .name {
+            font-size: $fs-title;
+            font-weight: 600;
+        }
+
+        .priceWrapper {
+            display: flex;
+            align-items: center;
+            margin-top: .3rem;
+            gap: 1rem;
+
+            .price {
+                font-size: $fs-title;
+            }
+
+            .quantity {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                padding: .2rem;
+                width: 20px;
+                height: 20px;
+                border: 1px solid $secondary;
+                border-radius: $radius;
+            }
+        }
+
+        .buttonWrapper {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            .buttonContainer {
+                button {
+                    background: transparent;
+                    border: 1px solid $secondary;
+                    width: 35px;
+                    aspect-ratio: 1/1;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: $primary-hover;
+                        color: $text-light;
+                    }
+
+                    &.increment {
+                        border-left: none;
+                        border-bottom-right-radius: $radius;
+                        border-top-right-radius: $radius;
+                    }
+
+                    &.decrement {
+                        border-bottom-left-radius: $radius;
+                        border-top-left-radius: $radius;
+                    }
+                }
+            }
+        }
+    }
+}
+.btnWrapper{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+.empty{
+    font-size: $fs-title;
+    color: $secondary;
+    font-weight: 600;
+}
