@@ -35,7 +35,7 @@ const Cart = () => {
          </div>
          <div className={style.btnWrapper}>
             <Button onClick={closeCartHandler} color={buttonStyle.dangerBorder}>Close</Button>
-            <Button onClick={dummyHandler} color={buttonStyle.accent}>Order</Button>
+            <Button onClick={dummyHandler} color={buttonStyle.accent}>Save basket</Button>
          </div>
       </>
    )
